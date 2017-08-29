@@ -10,5 +10,9 @@ angular.module('myApp.view1', ['ngRoute'])
 }])
 
 .controller('View1Ctrl', [function() {
+  var self = this;
 
+  self.items = ['item1', 'item2', 'item3'];
+  self.test1 = "test1";
+  console.log('test1', self.test1)
 }]);
